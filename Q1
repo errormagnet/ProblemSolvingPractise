@@ -1,6 +1,8 @@
-var num=[1,2,3,4,10,11];
-var sum=0;
-for(i=0;i<6;i++){
-    sum=sum+num[i];
+function simpleArraySum(ar) {
+    var sum=0;
+    for(var i=0;i<ar.length;i++){
+        sum=sum+ar[i];
+    }
+    return sum;
+
 }
-console.log(sum);
