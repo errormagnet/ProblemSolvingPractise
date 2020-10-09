@@ -1,0 +1,23 @@
+function plusMinus(arr) {
+    var negativeIntegers=0;
+    var positiveIntegers=0;
+    var zeroNumbers=0;
+    for (var i=0; i<arr.length; i++){
+        if (arr[i]<0){
+            negativeIntegers++;
+        }
+        if (arr[i]>0){
+            positiveIntegers++;
+        }
+        if (arr[i]===0){
+            zeroNumbers++;
+        }
+    }
+    var negativeIntegerDecimal=(negativeIntegers/arr.length).toFixed(6);
+    var positiveIntegerDecimal=(positiveIntegers/arr.length).toFixed(6);
+    var zeroNumberDecimal=(zeroNumbers/arr.length).toFixed(6);
+
+    console.log(positiveIntegerDecimal);
+    console.log(negativeIntegerDecimal);
+    console.log(zeroNumberDecimal);
+}
