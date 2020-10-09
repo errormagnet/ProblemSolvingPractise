@@ -1,0 +1,16 @@
+function diagonalDifference(arr) {
+    let rightDiagonalSum=0;
+    let leftDiagonalSum=0;
+    for(let i=0; i<arr.length; i++){
+        for(let j=0; j<arr.length; j++){
+            if(i === j){
+                rightDiagonalSum=rightDiagonalSum+arr[i][j];
+            }
+            if(i+j == arr.length-1){
+                leftDiagonalSum=leftDiagonalSum+arr[i][j];
+            }
+        }
+    }
+    let difference=Math.abs(rightDiagonalSum-leftDiagonalSum);  
+    return (difference);
+}
