@@ -1,0 +1,17 @@
+function timeConversion(s) {
+    const time=s.slice(0,8).split(':');
+    if(s.indexOf('AM') > -1){
+        if(time[0]==12){
+            time[0]='00';
+            return(time.join(':'));
+        }
+        return(time.join(':'));
+    }else if(s.indexOf('PM') > -1){
+        if(time[0]==12){
+            time[0]='12';
+            return(time.join(':'));
+        }
+        time[0]=Number(time[0])+12;
+        return(time.join(':'));
+    }
+}
