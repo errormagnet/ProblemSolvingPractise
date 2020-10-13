@@ -1,13 +1,13 @@
 function birthdayCakeCandles(candles) {
     // Write your code here
-    var count=[0];
+    var count=0;
     var instances;
     for(var i=0; i<candles.length; i++){
-        if(count[0]<candles[i]){
-            count[0]=candles[i];
+        if(count<candles[i]){
+            count=candles[i];
             instances=1;
         }
-        if(count[0]==candles[i]){
+        if(count==candles[i]){
             instances++;
         }
     }
