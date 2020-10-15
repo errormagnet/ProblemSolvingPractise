@@ -1,0 +1,24 @@
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    var aDistance=[];
+    var oDistance=[];
+    var aNumber=0;
+    var oNumber=0;
+    for(var i=0; i<apples.length; i++){
+        aDistance[i]=a+apples[i];
+    }
+    for(var i=0; i<oranges.length; i++){
+        oDistance[i]=b+oranges[i];
+    }
+    for(var i=0; i<aDistance.length; i++){
+        if(aDistance[i]>=s && aDistance[i]<=t){
+            aNumber++;
+        }
+    }
+    for(var i=0; i<oDistance.length; i++){
+        if(oDistance[i]>=s && oDistance[i]<=t){
+            oNumber++;
+        }
+    }
+    console.log(aNumber);
+    console.log(oNumber);
+}
