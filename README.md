@@ -9,3 +9,4 @@ Questions:
 7. https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 8. https://www.hackerrank.com/challenges/time-conversion/problem
 9. https://www.hackerrank.com/challenges/apple-and-orange/problem
+10. https://www.hackerrank.com/challenges/kangaroo/problem
