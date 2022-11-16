@@ -14,3 +14,21 @@ function diagonalDifference(arr) {
     let difference=Math.abs(rightDiagonalSum-leftDiagonalSum);  
     return (difference);
 }
+
+def diagonalDifference(arr)
+    right_diagonal_sum = 0
+    left_diagonal_sum = 0
+    
+    i = 0
+    j = 0
+    while i < arr.length
+        while j < arr.length
+            right_diagonal_sum += arr[i][j] if (i - j).zero?
+            left_diagonal_sum += arr[i][j] if (i + j) == (arr.length - 1)
+            j += 1
+        end
+        j = 0
+        i += 1
+    end
+    (right_diagonal_sum - left_diagonal_sum).abs
+end
