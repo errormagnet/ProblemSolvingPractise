@@ -22,3 +22,16 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     console.log(aNumber);
     console.log(oNumber);
 }
+
+def countApplesAndOranges(s, t, a, b, apples, oranges)
+    apples = apples.map { |val| val + a }
+    oranges = oranges.map { |val| val + b }
+
+    apple_count = 0
+    apples.each { |val| apple_count+=1 if val.between?(s, t) }
+
+    orange_count = 0
+    oranges.each { |val| orange_count+=1 if val.between?(s, t) }
+
+    puts([apple_count, orange_count])
+end
