@@ -11,5 +11,3 @@ Questions:
 9. https://www.hackerrank.com/challenges/apple-and-orange/problem
 10. https://www.hackerrank.com/challenges/kangaroo/problem
 11. https://www.hackerrank.com/challenges/compare-the-triplets/problem
-
-##Test
