@@ -6,3 +6,11 @@ function simpleArraySum(ar) {
     return arraySum;
 
 }
+
+def simpleArraySum(ar)
+    sum = 0
+    ar.each do |value|
+        sum += value
+    end
+    sum
+end
