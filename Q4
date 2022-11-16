@@ -21,3 +21,18 @@ function plusMinus(arr) {
     console.log(negativeIntegerDecimal);
     console.log(zeroNumberDecimal);
 }
+
+def plusMinus(arr)
+    positive = 0
+    negative = 0
+    zero = 0
+    
+    arr.each do |num|
+        positive+=1 if num.positive?
+        negative+=1 if num.negative?
+        zero+=1 if num.zero?
+    end
+     puts positive.to_f / arr.length
+     puts negative.to_f / arr.length
+     puts zero.to_f / arr.length
+end
