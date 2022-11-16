@@ -5,3 +5,11 @@ function aVeryBigSum(ar) {
     }
 return sum;
 }
+
+def aVeryBigSum(ar)
+    sum = 0
+    ar.each do |value|
+        sum = sum + value
+    end
+    sum
+end
