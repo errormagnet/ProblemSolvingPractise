@@ -23,3 +23,21 @@ function miniMaxSum(arr) {
     }
     console.log(miniSum, maxSum);
 }
+
+def miniMaxSum(arr)
+    sorted = arr.sort
+    min = 0    
+    max = 0
+    
+    i=0
+    while i<=3
+       min += sorted[i] 
+       i+=1
+    end 
+    j=1
+    while j<=4
+        max += sorted[j]
+        j+=1
+    end 
+    puts "#{min} #{max}"
+end
