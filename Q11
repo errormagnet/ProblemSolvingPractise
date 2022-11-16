@@ -10,3 +10,15 @@ function compareTriplets(a, b) {
     }
     return [alicePoints, bobPoints];
 }
+
+def compareTriplets(a, b)
+    i = 0
+    a_score = 0
+    b_score = 0
+    while i < a.length do
+        a_score += 1 if a[i] > b[i]
+        b_score += 1 if a[i] < b[i]
+        i += 1
+    end
+    [a_score, b_score]
+end
