@@ -12,3 +12,20 @@ function kangaroo(x1, v1, x2, v2) {
         return('NO');
     }
 }
+
+def kangaroo(x1, v1, x2, v2)
+    i = 0
+    while i < 10000 do
+        if x1+v1 == x2+v2
+            return 'YES'
+        else
+            if i == 9999
+                return 'NO'
+            else
+                x1 += v1
+                x2 += v2
+                i+=1
+            end
+        end
+    end
+end
