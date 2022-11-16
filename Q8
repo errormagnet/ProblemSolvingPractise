@@ -15,3 +15,13 @@ function timeConversion(s) {
         return(time.join(':'));
     }
 }
+
+def timeConversion(s)
+    split = s.split(':')
+    if split.last.include?('PM')
+        split[0] = split[0].to_i + 12 if split[0] != '12'
+        split[split.length - 1] = split.last.chomp('PM')
+    else
+        split[0] = '00' if split[0] == '12'
+        split[split.length - 1] = split.last.chomp('AM')
+end
