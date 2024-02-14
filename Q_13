@@ -1,0 +1,21 @@
+function breakingRecords(scores) {
+    let highestScore = scores[0];
+    let lowestScore = scores[0];
+    let highCount = 0;
+    let lowCount = 0;
+
+    scores.forEach((score, i) => {
+        if(i === 0) return;
+        
+        if(score > scores[i - 1] && score > highestScore) {
+            highestScore = score;
+            highCount++;
+        }
+        else if(score < scores[i - 1] && score < lowestScore) {
+            lowestScore = score;
+            lowCount++;
+        }
+    });
+    
+    return[highCount, lowCount]
+}
