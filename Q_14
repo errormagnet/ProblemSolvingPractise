@@ -1,0 +1,18 @@
+function birthday(s, d, m) {
+    let sets = 0;
+    
+    if(m > s.length) return sets; 
+    
+    for(let index = 0; index < s.length; index++) {
+        if(!s[index + (m - 1)]) continue;
+        let sum = 0;
+        
+        for(let i = index; i <= index + m - 1; i++) {
+            sum = sum + s[i];
+        }
+        
+        if(sum === d) sets++;
+    }
+    
+    return sets;
+}
