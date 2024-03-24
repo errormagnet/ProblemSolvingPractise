@@ -8,3 +8,13 @@ function getTotalX(a, b) {
     
     return betweenCount;
 }
+
+def getTotalX(a, b)
+    count = 0
+    
+    (a.max..b.min).each do |value|
+        count += 1 if a.all? {|item| value % item == 0} && b.all? {|item| item % value == 0}
+    end
+    
+    count
+end
