@@ -1,0 +1,23 @@
+function divisibleSumPairs(n, k, ar) {
+    let pairCount = 0
+    
+    ar.forEach((elem, index) => {
+        for (let i = index + 1; i <= n; i++) {
+            if ((elem + ar[i]) % k === 0) pairCount++
+        }
+    })
+    
+    return pairCount
+}
+
+def divisibleSumPairs(n, k, ar)
+    numberOfPairs = 0
+    
+    ar.each_with_index do |elem1, index|
+        ar[(index + 1)..n].each do |elem2|            
+            numberOfPairs += 1 if (elem1 + elem2) % k == 0
+        end
+    end
+    
+    numberOfPairs
+end
