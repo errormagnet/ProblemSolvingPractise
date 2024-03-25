@@ -19,3 +19,22 @@ function breakingRecords(scores) {
     
     return[highCount, lowCount]
 }
+
+def breakingRecords(scores)
+    minScoreHit = scores[0]
+    maxScoreHit = scores[0]
+    min = 0
+    max = 0
+    
+    scores.each do |score|
+        if score > maxScoreHit
+            maxScoreHit = score
+            max += 1
+        elsif score < minScoreHit
+            minScoreHit = score
+            min += 1
+        end
+    end
+    
+    [max, min]
+end
