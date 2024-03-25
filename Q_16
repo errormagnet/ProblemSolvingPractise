@@ -1,0 +1,11 @@
+function migratoryBirds(arr) {
+    let countObj = arr.reduce((acc, curr) => {
+        acc[curr] = (acc[curr] || 0) + 1;
+        return acc
+    }, {});
+    
+    let values = Object.values(countObj);
+    return Object.keys(countObj)[values.indexOf(values.reduce((acc, curr) => acc > curr ? acc : curr))]
+}
+
+
