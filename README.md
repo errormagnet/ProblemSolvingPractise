@@ -14,3 +14,4 @@ Questions:
 12. https://www.hackerrank.com/challenges/between-two-sets/problem
 13. https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 14. https://www.hackerrank.com/challenges/the-birthday-bar/problem
+15. https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
