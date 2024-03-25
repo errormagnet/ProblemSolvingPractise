@@ -16,3 +16,15 @@ function birthday(s, d, m) {
     
     return sets;
 }
+
+
+def birthday(s, d, m)
+    ways = 0
+    
+    s.each_with_index do |_, index|
+        next if s[index + m - 1].nil?
+        ways += 1 if (s[index..(index + m - 1)]).sum == d
+    end
+    
+    ways
+end
